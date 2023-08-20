@@ -1,26 +1,12 @@
 import Link from "next/link";
+import NavBar from "../../components/NavBar";
 
 export default function RestaurantDetails() {
     return (
         <main className="bg-gray-100 min-h-screen w-screen">
             <main className="max-w-screen-2xl m-auto bg-white">
-                {/* NAVBAR */}
-                <nav className="bg-white p-2 flex justify-between">
-                    <Link href="" className="font-bold text-gray-700 text-2xl">
-                        {" "} OpenTable{" "}
-                    </Link>
-                    <div>
-                        <div className="flex">
-                        <button
-                            className="bg-blue-400 text-white border p-1 px-4 rounded mr-3"
-                        >
-                            Sign in
-                        </button>
-                        <button className="border p-1 px-4 rounded">Sign up</button>
-                        </div>
-                    </div>
-                </nav>
-                {/* NAVBAR */} {/* HEADER */}
+                <NavBar />
+                {/* HEADER */}
                 <div className="h-96 overflow-hidden">
                 <div
                     className="bg-center bg-gradient-to-r from-[#0f1f47] to-[#5f6984] h-full flex justify-center items-center"
@@ -35,12 +21,12 @@ export default function RestaurantDetails() {
                 <div className="bg-white w-[70%] rounded p-3 shadow">
                     {/* RESAURANT NAVBAR */}
                     <nav className="flex text-reg border-b pb-2">
-                    <a href="" className="mr-7"> Overview </a>
-                    <a href="" className="mr-7"> Menu </a>
+                        <Link href="/restaurant/jollibee" className="mr-7"> Overview </Link>
+                        <Link href="/restaurant/jollibee/menu" className="mr-7"> Menu </Link>
                     </nav>
                     {/* RESAURANT NAVBAR */} {/* TITLE */}
                     <div className="mt-4 border-b pb-6">
-                    <h1 className="font-bold text-6xl">Milesstone Grill</h1>
+                        <h1 className="font-bold text-6xl">Milesstone Grill</h1>
                     </div>
                     {/* TITLE */} {/* RATING */}
                     <div className="flex items-end">
