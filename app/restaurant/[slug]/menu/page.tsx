@@ -3,6 +3,12 @@ import Header from "../components/Header";
 import RestaurantNavBar from "../components/RestaurantNavBar";
 import Menu from "../components/Menu";
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Menu of Jollibee | Online Reservation',
+}
+
 export default function RestaurantMenu() {
     return (
         <main className="bg-gray-100 min-h-screen w-screen">

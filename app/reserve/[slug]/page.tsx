@@ -3,6 +3,12 @@ import NavBar from "../../components/NavBar";
 import Header from "./components/Header";
 import Form from "./components/Form";
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Reserve at Jollibee | Online Reservation',
+}
+
 export default function Reserve() {
     return (
         <main className="bg-gray-100 min-h-screen w-screen">

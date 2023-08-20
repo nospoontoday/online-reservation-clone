@@ -2,6 +2,12 @@ import NavBar from './components/NavBar'
 import Header from './components/Header'
 import RestaurantCard from './components/RestaurantCard'
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Online Reservation',
+}
+
 export default function Home() {
 
   return (

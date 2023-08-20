@@ -4,6 +4,12 @@ import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 import RestaurantCard from "./components/RestaurantCard";
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Search | Online Reservation',
+}
+
 export default function Search() {
     return (
     <main className="bg-gray-100 min-h-screen w-screen">

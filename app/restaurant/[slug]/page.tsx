@@ -9,6 +9,12 @@ import Images from "./components/Images";
 import Reviews from "./components/Reviews";
 import ReservationCard from "./components/ReservationCard";
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Jollibee | Online Reservation',
+}
+
 export default function RestaurantDetails() {
     return (
         <main className="bg-gray-100 min-h-screen w-screen">
