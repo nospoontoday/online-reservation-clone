@@ -1,6 +1,12 @@
+'use client'
+
+import { useQuery, useQueryClient } from "@tanstack/react-query"
 import Link from "next/link"
 
 export default function RestaurantCard() {
+    const {data, isLoading} = useQuery({queryKey: ['restaurants'], queryFn: () => fetch('/api/restaurants').then(res => res.json())})
+
+    const queryClient = useQueryClient()
     return (
         <div
             className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer"
